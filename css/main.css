@@ -1,0 +1,332 @@
+/* ------------------------------------------ */
+/*             TABLE OF CONTENTS
+/* ------------------------------------------ */
+/*   01 - GENERAL SETTINGS SECTION  */
+/*   02 - TYPOGRAPHY SECTION  */
+/*   03 - HEADER SECTION  */
+/*   04 - NAVIGATION SECTION */
+/*   05 - ABOUT SECTION */
+/*   06 - Project SECTION */
+/*   07 - CONTACT SECTION */
+/*   08 - FOOTER SECTION */
+/*   09 - RESPONSIVE SECTION */
+
+/******** GENERAL SETTINGS SECTION START ********/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #121212;
+}
+
+#particles {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+/******** TYPOGRAPHY SECTION START ********/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  /* letter-spacing: 1pt; */
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 25px;
+}
+
+/******** HEADER SECTION START ********/
+
+#header {
+  background-size: cover;
+  background-image: url("/img/1bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-shadow: 0px 0px 30px blue;
+}
+
+.parallax-window {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-wrapper {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.header-wrapper .sm-title {
+  margin: 0;
+}
+
+.header-wrapper h1 {
+  font-size: 16pt;
+  letter-spacing: 6pt;
+  line-height: 40pt;
+  font-weight: 300;
+  color: #fff;
+}
+
+#header-title {
+  margin-top: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: #fff;
+  font-size: 2.7rem;
+}
+
+#header-title strong {
+  color: blue;
+  text-shadow: 0px 0px 30px blue;
+}
+
+.header-wrapper .links {
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.header-wrapper ul li {
+  display: inline-block;
+}
+
+.header-wrapper ul li .fa-brands {
+  margin-left: 12px;
+  margin-right: 12px;
+  color: #fff;
+}
+
+.header-wrapper ul li .fa-brands:hover {
+  margin-left: 12px;
+  margin-right: 12px;
+  color: blue;
+  text-shadow: 0px 0px 30px blue;
+}
+
+.header-wrapper button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background-color: blue;
+  border: none;
+  box-shadow: 0px 0px 30px blue;
+}
+
+.header-wrapper button:hover {
+  background-color: black;
+  border: none;
+  box-shadow: 0px 0px 30px black;
+}
+/******** NAVIGATION SECTION START ********/
+
+.navbar {
+  z-index: 5;
+  padding: 30px 0;
+  transition: all 0.5s ease-out;
+}
+
+.navbar-toggler-icon {
+  background: none;
+}
+
+.fa.fa-navicon {
+  font-size: 17pt;
+  color: white;
+}
+
+button:focus {
+  outline: none;
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #1b1b1b;
+  border-radius: 0px;
+}
+
+.navbar-nav .dropdown-menu a {
+  font-size: 8pt;
+  letter-spacing: 2pt;
+  color: #fff;
+}
+
+.dropdown .dropdown-menu a:hover {
+  color: #869791;
+  background-color: transparent;
+}
+
+.inbody {
+  background-color: #1b1b1b;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
+}
+
+.navbar .navbar-nav > li > a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 10pt;
+  color: #fff;
+  letter-spacing: 2pt;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #1b1b1b;
+}
+
+.navbar-nav .active > .nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.navbar-nav .show > .nav-link {
+  border-bottom: 3px solid #fff;
+  padding-bottom: 24px;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
+/******** ABOUT SECTION START **********/
+.about {
+  width: 100%;
+  height: auto;
+  padding: 4rem 0;
+  color: #fff;
+}
+
+.about-container h1,
+.education h1,
+.experience h1 {
+  border-bottom: 4px solid blue;
+}
+
+lottie-player {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.education-content p,
+.experience-content p {
+  line-height: 3pt;
+}
+
+/******** PROJECTS SECTION START ******  */
+.projects {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 0;
+  background-color: #000;
+  color: #fff;
+}
+
+/******** FOOTER SECTION START ********/
+
+footer {
+  background-color: #000;
+  border-top: 1px solid blue;
+  box-shadow: 0px 0px 30px blue;
+}
+
+footer h4 {
+  padding: 20px 0px;
+  font-size: 7pt;
+  color: #fff;
+}
+
+/******** RESPONSIVE SECTION START ********/
+
+@media only screen and (max-width: 1024px) {
+  .navbar .navbar-nav > li > a {
+    margin-left: 30px;
+    margin-bottom: 15px;
+  }
+  .navbar-nav .active > .nav-link,
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show,
+  .navbar-nav .show > .nav-link {
+    border-bottom: 2px solid #fff;
+    width: 15px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-wrapper img {
+    width: 50%;
+  }
+  .navbar .navbar-nav > li > a {
+    margin-left: 30px;
+    margin-bottom: 15px;
+  }
+  .navbar-nav .active > .nav-link,
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show,
+  .navbar-nav .show > .nav-link {
+    border-bottom: 2px solid #fff;
+    width: 15px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-wrapper img {
+    width: 50%;
+  }
+  .navbar .navbar-nav > li > a {
+    margin-left: 30px;
+    margin-bottom: 15px;
+  }
+  .navbar-nav .active > .nav-link,
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show,
+  .navbar-nav .show > .nav-link {
+    border-bottom: 2px solid #fff;
+    width: 15px;
+    padding-bottom: 20px;
+  }
+  .inbody {
+    padding-bottom: 10px;
+  }
+  .navbar-brand {
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .header-wrapper img {
+    width: 50%;
+  }
+  .navbar .navbar-nav > li > a {
+    margin-left: 30px;
+  }
+  .navbar-nav .active > .nav-link,
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show,
+  .navbar-nav .show > .nav-link {
+    width: 80px;
+    padding-bottom: 10px;
+  }
+  .navbar-brand {
+    padding-left: 15px;
+  }
+}

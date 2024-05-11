@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hi, I'm Oscar Romero</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Main CSS -->
+    <link href="css/main.css" rel="stylesheet" />
+    <!-- NORMALIZE CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <section
+      class="parallax-window"
+      id="header"
+      data-parallax="scroll"
+      data-img-src="/img/"
+    >
+      <canvas id="particles"></canvas>
+
+      <nav
+        class="navbar fixed-top navbar-expand-lg justify-content-center pb-3"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fa fa-navicon"></i
+            ></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav mt-2 mt-lg-0" id="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#header">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#form">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-wrapper text-center">
+        <div id="header-title"></div>
+        <ul class="links mt-5 d-flex justify-content-center">
+          <li>
+            <a href="https://github.com/ORomero227" target="_blank"
+              ><i class="fa-brands fa-github fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/oscar-romero-barbosa/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin fa-2xl"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="mt-5 text-center">
+          <button class="btn btn-primary btn-lg">
+            Here is my Resume <i class="fa-solid fa-file-arrow-down ms-2"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <!-- First Row -->
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-lg-6">
+            <div class="container">
+              <div class="about-container">
+                <h1>About Me</h1>
+                <h3>Oscar Romero Barbosa</h3>
+                <p class="about-text">
+                  I'm a passionate software engineer with strong knowledge of
+                  Full-Stack Development and Desktop development. Programming
+                  fuels my creativity, allowing me to craft innovative solutions
+                  that tackle real-world challenges. I'm a lifelong learner,
+                  constantly seeking out new technologies to push the boundaries
+                  of my skillset.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-6">
+            <div class="container">
+              <lottie-player
+                autoplay
+                loop
+                mode="normal"
+                src="/img/astronauta.json"
+              >
+              </lottie-player>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-lg-6">
+            <div class="container education">
+              <h1><i class="fa-solid fa-graduation-cap me-2"></i>Education</h1>
+              <div class="education-content">
+                <h2>B.S in Computer Science</h2>
+                <p>Inter American University of Puerto Rico</p>
+                <p>May - 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-6">
+            <div class="container experience">
+              <h1><i class="fa-solid fa-briefcase me-2"></i>Experience</h1>
+              <div class="experience-content">
+                <div>
+                  <h2>Front-End Developer Intern</h2>
+                  <p>Involve LLC</p>
+                  <p>March 2024 - April 2024</p>
+                  <ul>
+                    <li>
+                      Implement front-end changes on the Laravel-based projects
+                      including the company landing page.
+                    </li>
+                    <li>
+                      Collaborate with the team to integrate new features.
+                    </li>
+                    <li>
+                      Participate in meetings with project managers to discuss
+                      project requirements.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h2>Software Engineer</h2>
+                  <p>Raytheon (UAS) University Innovation Showcase</p>
+                  <p>March 2024 - April 2024</p>
+                  <ul>
+                    <li>
+                      Develop scripts using Python for drone and mini car
+                      autopilot functionality.
+                    </li>
+                    <li>
+                      Assist the team with assembly tasks for the drone and mini
+                      car.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Script Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script Parallax -->
+    <script src="js/parallax.min.js"></script>
+    <!-- Script Particles -->
+    <script src="js/particles.js"></script>
+    <script src="js/particles-custom.js"></script>
+    <!-- Script Swiper -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+    <!-- Script Typewriter -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- Astronaut Animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>
