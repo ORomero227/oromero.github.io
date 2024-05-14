@@ -51,7 +51,7 @@ p {
 
 #header {
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.215), #03002e),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), #03002e),
     url("../img/2bg.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -209,7 +209,7 @@ button:focus {
 /******** ABOUT SECTION START **********/
 .about {
   padding: 4rem 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), #03002e),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.902), rgba(0, 0, 0, 0.801)),
     url("../img/4bg.jpg");
   background-size: cover;
   color: #fff;
@@ -222,7 +222,10 @@ button:focus {
   border-bottom: 4px solid blue;
 }
 
-.education-content p,
+.education-content p {
+  line-height: 5pt;
+}
+
 .experience-content p {
   line-height: 3pt;
 }
@@ -235,17 +238,17 @@ button:focus {
 .skill {
   padding: 10px;
   margin-right: 1rem;
-  background-color: #03002e;
-  box-shadow: 0px 0px 30px blue;
+  background-color: #121212;
   border-radius: 10px;
+  border-bottom: 1px solid blue;
   color: #fff;
 }
 
 /******** PROJECTS SECTION START ******  */
 .projects {
   padding: 4rem 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), #03002e),
-    url("../img/5bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.5)),
+    url("../img/3bg.jpg");
   background-size: cover;
   color: #fff;
 }
@@ -259,10 +262,11 @@ button:focus {
   display: flex;
   align-items: center;
   padding: 20px;
-  border: 1px solid black;
-  background-color: #03002e;
+  border: none;
+  background-color: black;
+  box-shadow: 0px 0px 10px black;
   border-radius: 30px;
-  box-shadow: 0px 0px 30px black;
+  border: 1px solid blue;
 }
 
 .projects .link-github {
